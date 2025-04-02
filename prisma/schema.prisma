@@ -1,0 +1,40 @@
+generator client {
+    provider        = "prisma-client-js"
+    previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = env("DATABASE_URL")
+}
+
+model Place {
+    id        Int      @id @default(autoincrement())
+    name      String   @db.VarChar(255)
+    latitude  Decimal  @db.Decimal(9, 6)
+    longitude Decimal  @db.Decimal(9, 6)
+    category  String?  @db.VarChar(100)
+    createdAt DateTime @default(now())
+
+    recommendations Recommendation[]
+}
+
+model Influencer {
+    id          Int      @id @default(autoincrement())
+    name        String   @db.VarChar(255)
+    socialMedia String?  @db.VarChar(255)
+    createdAt   DateTime @default(now())
+
+    recommendations Recommendation[]
+}
+
+model Recommendation {
+    id            Int      @id @default(autoincrement())
+    placeId       Int
+    influencerId  Int
+    comment       String?
+    recommendedAt DateTime @default(now())
+
+    place      Place      @relation(fields: [placeId], references: [id], onDelete: Cascade)
+    influencer Influencer @relation(fields: [influencerId], references: [id], onDelete: Cascade)
+}

@@ -1,0 +1,9 @@
+name = "hottospotbackend"
+compatibility_date = "2025-04-01"
+main = "./.output/server/index.mjs"
+assets = { directory = "./.output/public/", binding = "ASSETS" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "hotto_spot_db"
+database_id = "960cee2d-398d-4197-a8ee-d220eb5ce0b9"
