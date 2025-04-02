@@ -7,6 +7,8 @@
     "preview": "node .output/server/index.mjs"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250402.0",
+    "nitro-cloudflare-dev": "^0.2.2",
     "nitropack": "latest",
     "prisma": "^6.5.0"
   },
