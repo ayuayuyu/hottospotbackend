@@ -3,6 +3,10 @@ import { PrismaClient } from '@prisma/client';
 
 export default defineEventHandler(async (event) => {
   const env = event.context.env; // Nitro の context から `env` を取得
+  console.log('env', env);
+
+  const { cloudflare } = event.context;
+  console.log('cloudflare', cloudflare);
 
   if (!env?.DB) {
     return new Response('Database not found', { status: 500 });
