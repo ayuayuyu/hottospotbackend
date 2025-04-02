@@ -10,10 +10,10 @@ datasource db {
 
 model Place {
     id        Int      @id @default(autoincrement())
-    name      String   @db.VarChar(255)
-    latitude  Decimal  @db.Decimal(9, 6)
-    longitude Decimal  @db.Decimal(9, 6)
-    category  String?  @db.VarChar(100)
+    name      String
+    latitude  Decimal
+    longitude Decimal
+    category  String?
     createdAt DateTime @default(now())
 
     recommendations Recommendation[]
@@ -21,8 +21,8 @@ model Place {
 
 model Influencer {
     id          Int      @id @default(autoincrement())
-    name        String   @db.VarChar(255)
-    socialMedia String?  @db.VarChar(255)
+    name        String
+    socialMedia String?
     createdAt   DateTime @default(now())
 
     recommendations Recommendation[]
