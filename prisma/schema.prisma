@@ -3,6 +3,7 @@ generator client {
     // binaryTargets = ["native", "wasm"]
     // binaryTargets   = ["wasm"]
     previewFeatures = ["driverAdapters", "strictUndefinedChecks"]
+    output          = "../server/generated/client"
 }
 
 datasource db {
