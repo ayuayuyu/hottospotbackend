@@ -1,7 +1,7 @@
 generator client {
-    provider        = "prisma-client-js"
-    // binaryTargets = ["native", "wasm"]
-    previewFeatures = ["driverAdapters", "strictUndefinedChecks"]
+    provider      = "prisma-client-js"
+    binaryTargets = ["native", "wasm"]
+    // previewFeatures = ["driverAdapters", "strictUndefinedChecks"]
 }
 
 datasource db {
