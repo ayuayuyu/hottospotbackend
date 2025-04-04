@@ -1,3 +1,4 @@
+
 import { D1Database } from '@cloudflare/workers-types';
 import { Database } from '~/model/database';
 
@@ -7,5 +8,6 @@ export default defineEventHandler((event) => {
   if (!db.client) {
     throw new Error('Database client is not initialized');
   }
+
   return db.client.place.findMany();
 });
