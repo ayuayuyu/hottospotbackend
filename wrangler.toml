@@ -2,8 +2,6 @@
 
 name = "hottospotbackend"
 compatibility_date = "2025-04-01"
-main = "./.output/server/index.mjs"
-assets = { directory = "./.output/public/", binding = "ASSETS" }
 pages_build_output_dir = ".output/server"
 
 [[d1_databases]]
