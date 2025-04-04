@@ -10,7 +10,7 @@ NODE_VERSION = "20"
 [[d1_databases]]
 binding = "DB"
 database_name = "hotto_spot_db"
-database_id = "960cee2d-398d-4197-a8ee-d220eb5ce0b9"
+database_id = "11ca95b9-71ca-4ff5-b16e-822f220d4f10"
 
 [observability]
 enabled = true
