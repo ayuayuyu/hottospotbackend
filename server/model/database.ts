@@ -6,7 +6,6 @@ export class Database {
 
   public constructor(db: D1Database) {
     const adapter = new PrismaD1(db);
-    console.log('Initializing Prisma Client with D1 adapter');
     this.client = new PrismaClient({ adapter });
   }
 }
