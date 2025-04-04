@@ -1,3 +1,3 @@
 export default defineEventHandler((event) => {
-  return 'Start by editing <code>server/routes/index.ts</code>.';
+  return '<h1>Hotto Spot Backend</h1>';
 });
