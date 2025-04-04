@@ -4,6 +4,7 @@
     "build": "nitro build",
     "dev": "nitro dev",
     "prepare": "nitro prepare",
+    "preset": "cloudflare_pages",
     "postinstall": "prisma generate",
     "preview": "node .output/server/index.mjs"
   },
