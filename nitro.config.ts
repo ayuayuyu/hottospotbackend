@@ -5,4 +5,7 @@ export default defineNitroConfig({
   srcDir: 'server',
   compatibilityDate: '2025-04-01',
   modules: [nitroCloudflareDev],
+  experimental: {
+    wasm: true,
+  },
 });
