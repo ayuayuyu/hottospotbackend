@@ -7,4 +7,3 @@ dist
 .env
 .dev.vars
 .DS_Store
-server/generated
