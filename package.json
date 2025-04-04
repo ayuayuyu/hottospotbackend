@@ -16,5 +16,8 @@
   "dependencies": {
     "@prisma/adapter-d1": "^6.5.0",
     "@prisma/client": "^6.5.0"
+  },
+  "engines": {
+    "node": ">=18.18.0"
   }
 }
